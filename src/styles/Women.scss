@@ -1,0 +1,33 @@
+@import './colors';
+@import './buttons';
+
+.women-section {
+    width: 100%;
+    height: 100vh;
+    background-color: $cream-color;
+    background-repeat: no-repeat;
+
+
+    background-image: url('https://baigenews.kz/upload/iblock/85f/f55ceb333b8a2c4c537f2b00eb983c69_crop_l_28_t_16_w_2480_h_1395.jpg');
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem ;
+        color: $main-color;
+    }
+    .look {
+        margin: 15rem;
+        text-align: center;
+        color: $main-color;
+        font-size: 50px;
+        button {
+            @include button;
+        }
+        button:hover {
+            @include hover;
+        }
+    }
+
+}
